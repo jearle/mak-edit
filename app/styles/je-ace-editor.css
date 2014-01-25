@@ -1,0 +1,41 @@
+.je-ace-editor-app-container {
+	height: 100%;
+}
+
+.je-ace-editor-container {
+	height: 100%;
+}
+
+.je-ace-editor-container .je-ace-editor,
+.je-ace-editor-container .je-ace-html {
+	width: 49.5%; 
+	height: 100%; 
+	position: relative;
+	box-shadow: 0px 0px 6px 0px black;
+}
+
+.je-ace-editor-container .je-ace-editor {
+	position: relative;
+	float: left;
+}
+
+.je-ace-editor-container .je-ace-html {
+	position: relative;
+	background: white;
+	float: right;
+	overflow-y: scroll;
+}
+
+.je-ace-editor-container .je-ace-html-content {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding: 0px 10px;
+}
+
+.je-ace-editor-container .je-ace-html-content pre code{
+	overflow-x: scroll;
+	font-size: 12px;
+}
+
+.je-ace-editor-container .je-clear-fix {
+	clear: both;
+}
