@@ -31,8 +31,8 @@ var uniqueId = uuid();
 
 var scriptNode = $('#je_ace_editor_script');
 var editorDiv = $('<div>')
-	.attr('id', 'je_ace_editor_app')
-	.html(rootTemplate);
+  .attr('id', 'je_ace_editor_app')
+  .html(rootTemplate);
 
 scriptNode.before(editorDiv);
 
