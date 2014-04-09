@@ -2,7 +2,7 @@ require('./globals');
 
 var fs = require('fs');
 
-// var uuid = require('./helpers/uuid');
+var uuid = require('./helpers/uuid');
 
 var app = require('./app');
 /**
