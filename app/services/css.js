@@ -6,7 +6,7 @@ app.factory('jeCss', [
 
 		function addStyle (css, id) {
 			var currentStyle = $('#' + id);
-			
+
 			if (currentStyle.length > 0)
 				currentStyle.html(css);
 			else

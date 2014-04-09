@@ -10,10 +10,10 @@ app.factory('jeMarkdown', [
 		return {
 			toHtml: function (md) {
 				return marked(
-					md, 
+					md,
 					{
 						highlight: function (code, lang, callback) {
-							return hljs.highlight(lang, code).value;	
+							return hljs.highlight(lang, code).value;
 						}
 					}
 				);

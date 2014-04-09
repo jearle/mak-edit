@@ -8,8 +8,8 @@
 
 .je-ace-editor-container .je-ace-editor,
 .je-ace-editor-container .je-ace-html {
-	width: 49.5%; 
-	height: 100%; 
+	width: 49.5%;
+	height: 100%;
 	position: relative;
 	box-shadow: 0px 0px 6px 0px black;
 }

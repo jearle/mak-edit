@@ -21,12 +21,12 @@ app.factory('jeLocalStorage', [
 		}
 
 		function store (md) {
-			
+
 			if (md)
-				return $window.localStorage[LOCAL_STORAGE_KEY] = md; 
+				return $window.localStorage[LOCAL_STORAGE_KEY] = md;
 
 			return $window.localStorage[LOCAL_STORAGE_KEY];
-		
+
 		}
 
 		function storage (md) {

@@ -51,7 +51,7 @@ app.directive('jeAceEditor', [
 				}
 
 				/**
-				 * Creates a an id with the editor's 
+				 * Creates a an id with the editor's
 				 * prefix id and a number.
 				 * @param  {integer} num
 				 * @return {string}
@@ -68,7 +68,7 @@ app.directive('jeAceEditor', [
 				 * @return {string}
 				 */
 				function generateUniqueId (num) {
-					
+
 					num = num || 0;
 					var id = createId(num);
 
@@ -76,7 +76,7 @@ app.directive('jeAceEditor', [
 						generateUniqueId(num++);
 					else
 						return id;
-				
+
 				}
 
 				/**

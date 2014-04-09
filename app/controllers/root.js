@@ -18,16 +18,16 @@ app.controller('Root', [
 		$scope.markdown = LocalStorage.storage();
 
 		function markdownChanged (newValue, oldValue) {
-			
+
 			if (newValue === oldValue) return;
 
 			scriptNode.trigger(
-				'markdownChanged', 
+				'markdownChanged',
 				{
 					markdown: $scope.markdown
 				}
 			);
-			
+
 			LocalStorage.storage($scope.markdown);
 		}
 
