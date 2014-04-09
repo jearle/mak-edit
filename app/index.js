@@ -2,6 +2,8 @@ require('./globals');
 
 var fs = require('fs');
 
+// var uuid = require('./helpers/uuid');
+
 var app = require('./app');
 /**
  * Controllers
@@ -24,10 +26,16 @@ require('./services/local-storage');
 
 var rootTemplate = fs.readFileSync(__dirname + '/partials/root.html');
 
-window.scriptNode = $('#je_ace_editor_script');
-window.editorDiv = $('<div>')
+var uniqueId = uuid();
+// console.log(uniqueId);
+
+var scriptNode = $('#je_ace_editor_script');
+var editorDiv = $('<div>')
 	.attr('id', 'je_ace_editor_app')
 	.html(rootTemplate);
+
 scriptNode.before(editorDiv);
+
+app.value('jeAceEditorScriptNode', scriptNode);
 
 angular.bootstrap(editorDiv, ['jeAceEditor']);
