@@ -37,3 +37,13 @@ grunt devserver
 
 Now navigation to `http://localhost:8888` in your browser
 and you should see the application.
+
+## Development
+
+All you need to do is run grunt in order for the `app/` directory
+to be monitored for changes.  When a file changes, the application
+will be automatically built with Browserify.
+
+```bash
+grunt
+```
